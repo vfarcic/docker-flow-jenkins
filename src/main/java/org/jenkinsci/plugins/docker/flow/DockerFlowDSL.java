@@ -5,9 +5,6 @@ import hudson.Extension;
 import org.jenkinsci.plugins.workflow.cps.CpsScript;
 import org.jenkinsci.plugins.workflow.cps.GlobalVariable;
 
-/**
- * Created by vfarcic on 08/03/16.
- */
 @Extension
 public class DockerFlowDSL extends GlobalVariable {
 

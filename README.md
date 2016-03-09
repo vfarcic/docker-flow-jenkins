@@ -15,6 +15,7 @@ TODO
 ----
 
 * Tests
+* Submit to jenkins-ci.org
 
 Misc
 ----
