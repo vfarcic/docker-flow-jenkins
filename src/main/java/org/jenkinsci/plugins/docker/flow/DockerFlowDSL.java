@@ -18,10 +18,11 @@ public class DockerFlowDSL extends GlobalVariable {
         if (binding.hasVariable(getName())) {
             dockerFlow = binding.getVariable(getName());
         } else {
-            // Note that if this were a method rather than a constructor, we would need to mark it @NonCPS lest it throw CpsCallableInvocation.
-            dockerFlow = script.getClass().getClassLoader()
+            dockerFlow = script.getClass()
+                    .getClassLoader()
                     .loadClass("org.jenkinsci.plugins.docker.flow.DockerFlow")
-                    .getConstructor(CpsScript.class).newInstance(script);
+                    .getConstructor(CpsScript.class)
+                    .newInstance(script);
             binding.setVariable(getName(), dockerFlow);
         }
         return dockerFlow;
