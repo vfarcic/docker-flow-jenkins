@@ -25,12 +25,12 @@ class DockerFlow implements Serializable {
         def flow = new Flow(this, consul, compose)
         flow.composePath = args.containsKey("composePath") ? args["composePath"] : "docker-compose.yml"
         flow.blueGreen = args.containsKey("blueGreen") ? args["blueGreen"] : true
-        flow.target = args.containsKey("target") ? args["target"] : "" // Fail if empty
+        flow.target = args.containsKey("target") ? args["target"] : ""
         flow.sideTargets = args.containsKey("sideTargets") ? args["sideTargets"] : []
         flow.pullTarget = args.containsKey("pullTarget") ? args["pullTarget"] : true
         flow.pullSideTargets = args.containsKey("pullSideTargets") ? args["pullSideTargets"] : false
-        flow.project = args.containsKey("project") ? args["project"] : "" // Fail if empty
-        flow.scAddress = args.containsKey("scAddress") ? args["scAddress"] : "" // Fail if empty
+        flow.project = args.containsKey("project") ? args["project"] : ""
+        flow.scAddress = args.containsKey("scAddress") ? args["scAddress"] : ""
         flow.scale = args.containsKey("scale") ? args["scale"] : "1"
         flow.serviceName = flow.project + "-" + flow.target
         flow.currentColor = consul.getCurrentColor(flow.scAddress, flow.serviceName)
