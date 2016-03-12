@@ -1,11 +1,10 @@
-package org.jenkinsci.plugins.docker.flow;
+package org.jenkinsci.plugins.dockerflow;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.jvnet.hudson.test.WithoutJenkins;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;

@@ -1,4 +1,4 @@
-package org.jenkinsci.plugins.docker.flow
+package org.jenkinsci.plugins.dockerflow
 
 class DockerFlow implements Serializable {
 

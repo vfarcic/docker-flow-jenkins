@@ -1,4 +1,4 @@
-package org.jenkinsci.plugins.docker.flow;
+package org.jenkinsci.plugins.dockerflow;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package org.jenkinsci.plugins.docker.flow;
+package org.jenkinsci.plugins.dockerflow;
 
 import java.io.*;
 import java.net.HttpURLConnection;

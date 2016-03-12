@@ -14,7 +14,6 @@ License
 TODO
 ----
 
-* Write help
 * Write Wiki
 * Submit to jenkins-ci.org
 * Write an article

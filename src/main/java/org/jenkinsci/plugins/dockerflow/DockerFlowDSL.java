@@ -1,4 +1,4 @@
-package org.jenkinsci.plugins.docker.flow;
+package org.jenkinsci.plugins.dockerflow;
 
 import groovy.lang.Binding;
 import hudson.Extension;
@@ -20,7 +20,7 @@ public class DockerFlowDSL extends GlobalVariable {
         } else {
             dockerFlow = script.getClass()
                     .getClassLoader()
-                    .loadClass("org.jenkinsci.plugins.docker.flow.DockerFlow")
+                    .loadClass("DockerFlow")
                     .getConstructor(CpsScript.class)
                     .newInstance(script);
             binding.setVariable(getName(), dockerFlow);
