@@ -3,7 +3,7 @@ node("master") {
             project: "books-ms",
             scAddress: "http://192.168.99.100:8500",
             target: "app",
-            scale: 3)
+            scale: +2)
     withEnv([
             "DOCKER_HOST=tcp://192.168.99.100:2376",
             "DOCKER_TLS_VERIFY=0",
